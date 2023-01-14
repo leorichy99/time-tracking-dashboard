@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Frontend Mentor, time tracking dashboard, time track dashboard" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body style="overflow-y: auto;" tabindex="0">
+  <main class="main_container">
+    <div class="content">
+      <!-- Jerry Robson center -->
+      <div class="user">
+        <img src="./images/favicon-32x32.png" alt="front_end_mentor" class="front_end_mentor" />
+        <div class="user_info">
+          <div class="customer_avatar">
+            <img src="./images/image-jeremy.png" alt="Jeremy" />
+          </div>
+          <span>Report for</span>
+          <h1 class="user_name">Jerry Robson</h1>
+        </div>
+
+        <!-- report time frame -->
+        <div class="report_time_frame">
+          <a href="#" class="daily">Daily</a>
+          <a href="#" class="weekly">Weekly</a>
+          <a href="#" class="monthly">Monthly</a>
+        </div>
+      </div>
+
+      <!-- various reports session -->
+      <div class="reports_container">
+        <!-- Work report section -->
+        <div class="report_card work">
+          <div class="report_type_theme work">
+            <img src="./images/icon-work.svg" alt="work" />
+          </div>
+          <div class="report_info work">
+            <div class="report_header">
+              <span class="report_type">Work</span>
+              <button type="button" class="ellipse" aria-label="button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="report_duration_track">
+              <h2 class="current"></h2>
+              <span class="previous"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Play report section -->
+        <div class="report_card play">
+          <div class="report_type_theme play">
+            <img src="./images/icon-play.svg" alt="play" />
+          </div>
+          <div class="report_info play">
+            <div class="report_header">
+              <span class="report_type">Play</span>
+              <button type="button" class="ellipse" aria-label="button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="report_duration_track">
+              <h2 class="current"></h2>
+              <span class="previous"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study report section -->
+        <div class="report_card study">
+          <div class="report_type_theme study">
+            <img src="./images/icon-study.svg" alt="study" />
+          </div>
+          <div class="report_info study">
+            <div class="report_header">
+              <span class="report_type">Study</span>
+              <button type="button" class="ellipse" aria-label="button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="report_duration_track">
+              <h2 class="current"></h2>
+
+              <span class="previous"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise report section -->
+        <div class="report_card exercise">
+          <div class="report_type_theme exercise">
+            <img src="./images/icon-exercise.svg" alt="exercise" />
+          </div>
+          <div class="report_info exercise">
+            <div class="report_header">
+              <span class="report_type">Exercise</span>
+              <button type="button" class="ellipse" aria-label="button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="report_duration_track">
+              <h2 class="current"></h2>
+
+              <span class="previous"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social report section -->
+        <div class="report_card social">
+          <div class="report_type_theme social">
+            <img src="./images/icon-social.svg" alt="social" />
+          </div>
+          <div class="report_info social">
+            <div class="report_header">
+              <span class="report_type">Social</span>
+              <button type="button" class="ellipse" aria-label="button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="report_duration_track">
+              <h2 class="current"></h2>
+
+              <span class="previous"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Self care report section -->
+        <div class="report_card self_care">
+          <div class="report_type_theme self_care">
+            <img src="./images/icon-self-care.svg" alt="work" />
+          </div>
+          <div class="report_info self_care">
+            <div class="report_header">
+              <span class="report_type">Self Care</span>
+              <button type="button" class="ellipse" aria-label="button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="report_duration_track">
+              <h2 class="current"></h2>
+
+              <span class="previous"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
